@@ -1,0 +1,79 @@
+# Node modules
+node_modules/
+.npm/
+.yarn/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# build output
+build/
+dist/
+log/
+tmp/
+
+# React Native
+# android
+android/build/
+android/.gradle/
+android/app/build/
+android/app/.cxx/
+android/app/release/
+android/app/debug/
+android/app/src/main/assets/
+android/app/src/main/res/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/.idea/
+
+# ios
+ios/build/
+ios/*.xcworkspace/
+ios/*.xcodeproj/
+ios/.xccheckout
+ios/Pods/
+ios/DerivedData/
+
+# Expo
+.expo/
+*.jks
+*.p12
+*.key
+*.pem
+*.orig
+web-build/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Environment variables
+.env
+.env.local
+
+# ... (前面是你的原始内容) ...
+
+# Android signing keys (VERY IMPORTANT to not commit these!)
+*.keystore
+debug.keystore
+
+# --- Custom additions for Android build outputs ---
+# Explicitly ignore common APK and AAB locations
+# This covers cases where APK/AAB might be placed in the project root
+*.apk
+*.aab
+
+# This covers any APK/AAB generated anywhere within the 'android' directory structure
+android/**/*.apk
+android/**/*.aab
+
+# Specific paths, though the above android/**/*.apk should cover this
+# android/app/*.apk
+# android/app/*.aab
+
+
+
